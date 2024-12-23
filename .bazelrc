@@ -1,4 +1,5 @@
 common --enable_bzlmod --noenable_workspace
+common --registry=https://bcr.bazel.build
 
 build --cxxopt=-std=c++17 --host_cxxopt=-std=c++17
 
