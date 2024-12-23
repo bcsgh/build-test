@@ -1,0 +1,6 @@
+module(name = "com_github_bcsgh_build_test")
+
+bazel_dep(
+    name = "bazel_skylib", 
+    version = "1.7.1",
+)
