@@ -26,11 +26,22 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 """
+# A Bazel test rule that tests if another rule builds.
+
 A basic test that always passes, as long as everythin in `targets` builds.
 This is usefull, for example, with a genrule.
 
 NOTE consider using:
 https://github.com/bazelbuild/bazel-skylib/blob/main/docs/build_test_doc.md
+
+## `MODULE.bazel`
+
+```
+bazel_dep(
+    name = "com_github_bcsgh_build_test",
+    version = ...,
+)
+```
 """
 
 def _build_test_impl(ctx):
